@@ -194,6 +194,46 @@ a:hover {
     width: 50px;
 }
 
+.landscape-h1 {
+    text-align: center;
+}
+
+.categories {
+    margin: 60px;
+}
+
+.row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.categories p {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.categories h5 {
+    max-width: 500px;
+}
+
+.categories img {
+    width: 500px;
+    height: 400px
+}
+
+h2 {
+    font-weight: 500;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
