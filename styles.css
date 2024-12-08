@@ -1,3 +1,22 @@
+@media screen and (width <= 1200px) {
+    .sidenav {
+        display: none;
+    }
+    .quick-landscape {
+        margin: 50;
+        text-align: center;
+    }    
+}
+
+@media screen and (width <= 576px) {
+    .row-wrap, .column {
+        display: block;
+        text-align: center;
+    }
+    
+
+}
+
 :root {
     --font-color: #191919;
     --hover-color: #3B5E3D;
@@ -183,7 +202,7 @@ a:hover {
 .about {
     display: block;
     text-align: center;
-    padding: 100px;
+    padding: 300px 100px;
 }
 
 .about p {
@@ -214,6 +233,7 @@ a:hover {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    padding-right: 100px;
 }
 
 .categories p {
@@ -232,6 +252,35 @@ a:hover {
 
 h2 {
     font-weight: 500;
+}
+
+.more {
+    font-size: 34px;
+    text-align: center;
+}
+
+.top-review {
+    text-align: center;
+}
+
+.cheapest {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.support {
+    padding: 100px;
+    text-align: center;
+}
+
+label {
+    padding: 20px;
+}
+
+input, textarea, select {
+    border: none;
+    border-bottom: var(--hover-color) 2px solid;
+    background: none;
 }
 
 .fade {
