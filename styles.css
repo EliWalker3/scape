@@ -1,0 +1,102 @@
+:root {
+    --font-color: #191919;
+    --hover-color: #3B5E3D;
+    --background-color: #fafafa;
+    --font: "Poppins";
+}
+
+body {
+    margin: 0;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: var(--font), "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+    transition: 0.3s;
+}
+
+
+.topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.topnav a:not(:first-child) {
+    margin-left: 200px;
+}
+
+.topnav input {
+    margin-top: 5px;
+    margin-right: 50px;
+    float: right;
+}
+
+#logo {
+    width: 50px;
+    margin-left: 100px;
+}
+
+.sidenav {
+    margin: 170px 0;
+    padding: 0 20px;
+    width: 190px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidenav a {
+    display: block;
+    background-color: var(--background-color);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 35%);
+}
+
+.sidenav a:hover {
+    color: var(--hover-color);
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.slideshow-container {
+    margin-top: 75px;
+    margin-left: 150px;
+    width: 2000px;
+    position: absolute;
+}
+
+.slides {
+    display: none;
+    max-height: 1300px;
+}
+
+.slides img {
+    margin-left: 200px;
+    vertical-align: middle;
+    min-height: 80%;
+    min-width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+  @keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+}
